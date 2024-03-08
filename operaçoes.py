@@ -7,7 +7,7 @@ print('______________________')
 if code == 1:
     print('CALCULADORA SIMPLES - 2 NÚMEROS\n______________________')
     print('Adição: \033[36m(A)\033[m\nSubtração: \033[36m(S)\033[m\nMultiplicação: \033[36m(M)\033[m')
-    print('Divisão: \033[36m(D)\033[m\nRaiz Quadrada: \033[36m(R)\033[m\nPotenciaçao: \033[36m(P)\033[m\n----------------------')
+    print('Divisão: \033[36m(D)\033[m\nRaiz Quadrada: \033[36m(R)\033[m\nPotenciaçao: \033[36m(P)\033[m\nLogaritmo: \033[36m(L)\033[m\n----------------------')
     op = str(input('Digite a Inicial da Operação: '))
     opçoes = ['A','S','M','D',]
 
@@ -23,6 +23,13 @@ if code == 1:
         exp = float(input('Expoente: '))
         result = num ** exp
         print(f'-------------------\nPotenciação: {num}^{exp} = {result}')
+    elif op.upper() == 'L':
+        print('______________________')
+        from math import log
+        num = float(input('Número: '))
+        base = float(input('Base: ')) 
+        result = log(num,base)
+        print(f'-------------------\nLog: {result}')
     elif op.upper() in opçoes:
         print('______________________')
         num1 = float(input('Número 1: '))
@@ -74,6 +81,6 @@ elif code == 3:
         dist = ((x2 - x1) ** 2 + (y2 - y1) ** 2)
         result = dist**0.5
         print(f'-----------------------\nDistância = √{dist} = {result}')
+    elif choise ==2:,
 
-
-# elif code == 4:
+#elif code == 4:
