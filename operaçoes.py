@@ -81,6 +81,6 @@ elif code == 3:
         dist = ((x2 - x1) ** 2 + (y2 - y1) ** 2)
         result = dist**0.5
         print(f'-----------------------\nDistância = √{dist} = {result}')
-    elif choise ==2:,
+    elif choise ==2:
 
 #elif code == 4:
